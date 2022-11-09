@@ -129,7 +129,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         image2 = QImage(self.image2.data, w, h, bytes_per_line, QImage.Format_RGB888 ).rgbSwapped()
         pixmap = QPixmap(image2)
         pixmap = pixmap.scaled(QSize(300, 300), aspectMode=Qt.KeepAspectRatioByExpanding)
-        self.label_3.setPixmap(pixmap)
+        self.label_5.setPixmap(pixmap)
         
     def flip_image(self):
         image = cv2.flip(self.image, 1)
@@ -164,7 +164,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
             plus_image.data, w, h, bytes_per_line, QImage.Format_BGR888).rgbSwapped()
         pixmap = QPixmap(plus_image)
         pixmap = pixmap.scaled(QSize(300, 300), aspectMode=Qt.KeepAspectRatioByExpanding)
-        self.label_5.setPixmap(pixmap)
+        self.label_3.setPixmap(pixmap)
         
     def mozaic_image(self):
         ratio = 0.1 #모자이크 정도
