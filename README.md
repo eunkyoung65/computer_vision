@@ -1,9 +1,10 @@
-## cap.png는 기존 제가 디자인 했던 화면으로 도움이 될까 같이 첨부했습니다.
-## 혹시 몰라 파이썬 파일로 변경한 것도 같이 첨부했으나, 저는 UI파일을 제 폴더에 같이 넣어서 연동해주었습니다.
-
 
 # computer_vision
 간단한 포토샵 만들기
+
+기본적으로 UI에서 사이즈를 맞춰주었기때문에 데려오는 사진의 사이즈도 맞췄습니다.
+pixmap을 다시 300,300의 사이즈로 Qt에 있는 함수를 사용하여 비율은 그대로 맞췄습니다.
+pixmap = pixmap.scaled(QSize(300, 300), aspectMode=Qt.KeepAspectRatioByExpanding)
 
 * 사진반전 (Flip_image) *
   
