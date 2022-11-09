@@ -6,8 +6,10 @@
 ### pixmap을 다시 300,300의 사이즈로 Qt에 있는 함수를 사용하여 비율은 그대로 맞췄습니다.
 ### pixmap = pixmap.scaled(QSize(300, 300), aspectMode=Qt.KeepAspectRatioByExpanding)
 
+사진 저장은 Label에서 표시하고 있는 사진 데이터를 QPixmap객체의 형태로 반환받은 후 변수에 넣어, save함수를 이용해 사진 저장하는 형식으로 받았습니다.
+
 * 사진반전 (Flip_image) *
-  
+  ㄴ
   cv2를 사용하여 사진을 반전하여 보여줍니다.
   
 * 색상 반전 (pain_image) *
@@ -36,9 +38,14 @@
   exp와 scale 을 이용하여 사진의  극좌표를 변경 했습니다.
   
 * 오목 이미지 scale_image *
-  반복
+  
+  볼록과 비슷하지만 범위를 바꾸고, 극좌표 또한 변경했습니다.
  
 * 흐린 이미지 Blur_image  *
    
   cv2에 있는 medianBlur을 이용하여 블러처리 했습니다.
+  
+ * HSV 이미지 Hsv_image *
+ 
+  사진을 RGB형태가 아닌 HSV 형태로 받아오기 위해 cv2를 사용했습니다.
   
